@@ -11,7 +11,6 @@ args = argparse.ArgumentParser(description='Process annoatate images')
 
 args.add_argument('-i','--img_dir', type=str, help='images_directory', required=True)
 args.add_argument('-l','--label_dir', type=str,help='labels_directory', required=True)
-args.add_argument('-s','--img_size', type=int,help='image size', required=True)
 args.add_argument('-o','--output_dir', type=str,help='output_directory', required=True)
 
 
@@ -25,7 +24,6 @@ argumens = args.parse_args()
 class config:
     imagedir = argumens.img_dir
     labeldir = argumens.label_dir
-    img_size = argumens.img_size
     annotation_dir = argumens.output_dir
     
         
@@ -113,7 +111,7 @@ for img_number in range(0,len(train_imgs)):
         xmax = objs['xmax']
         ymax = objs['ymax']
         c_id = labels_ids[objs['name']]
-        data.append((im_name,xmin, ymin, xmax, ymax, [xmin, config.img_size - ymax, xmax-xmin, ymax-ymin],c_id))
+        data.append((im_name,xmin, ymin, xmax, ymax, [xmin, ymin, xmax-xmin, ymax-ymin],c_id))
 
     
 data = pd.DataFrame(data, columns=('image_id', 'xmin', 'ymin', 'xmax', 'ymax', 'yolo_bbox','label'))
