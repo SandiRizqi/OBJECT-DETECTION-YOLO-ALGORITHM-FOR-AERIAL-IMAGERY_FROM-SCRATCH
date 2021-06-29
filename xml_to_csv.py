@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[99]:
-
-
 from PIL import Image
 import os
 import xml.etree.ElementTree as ET
@@ -11,8 +5,6 @@ import os
 import pandas as pd
 import argparse
 
-
-# In[105]:
 
 
 args = argparse.ArgumentParser(description='Process annoatate images')
@@ -23,13 +15,11 @@ args.add_argument('-s','--img_size', type=int,help='image size', required=True)
 args.add_argument('-o','--output_dir', type=str,help='output_directory', required=True)
 
 
-# In[106]:
 
 
 argumens = args.parse_args()
 
 
-# In[104]:
 
 
 class config:
@@ -41,23 +31,14 @@ class config:
         
 
 
-# In[ ]:
-
-
-
-
-
-# In[36]:
 
 
 images = os.listdir(config.imagedir)
 labels = os.listdir(config.labeldir)
 
 
-# In[34]:
 
 
-#See sample xml file for reference
 def parse_annotation(ann_dir, img_dir, labels=[], x_ratio =1, y_ratio = 1):
     all_imgs = []
     seen_labels = {}
@@ -108,8 +89,6 @@ def parse_annotation(ann_dir, img_dir, labels=[], x_ratio =1, y_ratio = 1):
     return all_imgs, seen_labels
 
 
-# In[40]:
-
 
 LABELS = ['1'] # array containing labels. Can be more than one.
 train_image_folder = config.imagedir + "/"
@@ -117,11 +96,9 @@ train_annot_folder = config.labeldir + "/"
 
 train_imgs, seen_train_labels = parse_annotation(train_annot_folder, train_image_folder, labels=LABELS,)
 
-#label_ids = seen_train_labels.copy()
 labels_ids = {'1': 'palm'}
 
 
-# In[87]:
 
 
 data = []
@@ -140,15 +117,6 @@ for img_number in range(0,len(train_imgs)):
 
     
 data = pd.DataFrame(data, columns=('image_id', 'xmin', 'ymin', 'xmax', 'ymax', 'yolo_bbox','label'))
-
-
-# In[86]:
-
-
-data
-
-
-# In[91]:
 
 
 data.to_csv(config.annotation_dir + "/annotations.csv", index=False)
