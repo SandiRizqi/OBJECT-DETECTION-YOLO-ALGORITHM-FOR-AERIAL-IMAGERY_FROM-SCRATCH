@@ -1,4 +1,4 @@
-# OBJECT-DETECTION-YOLO-ALGORRITHM-FOR-AERIAL-IMAGERY
+# OBJECT-DETECTION-YOLO-ALGORITHM-FOR-AERIAL-IMAGERY
 This project is implementation of Object detection YOLO algorithm to detect object in aerial imagery or satellite imagery data
 
 To implement this project you need to meke envirinment and install some essential packages:
