@@ -18,6 +18,9 @@ this project also able to run in google colab
 
 MAKE SAMPLES :
 - Just run make_chip_samples.py to your imagery data to make sample that you can annotate
+
+example: python make_chip_samples.py -i xxx\xxx\xx\xxx.jpg -s 1000 -o xx\xx\xx\xx\
+
 - to make and annotate you samples you need to install Labelimg
 - Annotate your sample and save in VOC format
 
