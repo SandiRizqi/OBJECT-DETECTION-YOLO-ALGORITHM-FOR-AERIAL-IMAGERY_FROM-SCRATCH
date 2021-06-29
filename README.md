@@ -8,7 +8,7 @@ To implement this project you need to meke envirinment and install some essentia
 - matplotlib
 - shapely
 
-or just install from Requirement.txt
+or just install from Requirement.txt by pip install -r Requirement.txt
 this project also able to run in google colab
 
 
