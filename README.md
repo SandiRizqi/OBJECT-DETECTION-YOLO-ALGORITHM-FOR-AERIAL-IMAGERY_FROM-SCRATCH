@@ -7,6 +7,8 @@ To implement this project you need to meke envirinment and install some essentia
 - slidingwindow
 - matplotlib
 - shapely
+- rasterio
+- geopandas
 
 or just install from Requirement.txt 
 
