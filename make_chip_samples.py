@@ -40,11 +40,8 @@ def compute_windows(numpy_image, patch_size, patch_overlap):
 windows = compute_windows(image, argumens.chips_size, 0.5)
 
 for index, window in enumerate(windows):
-            # Crop window and predict
-            crop = image[windows[index].indices()]
 
-            #Crop is RGB channel order, change to BGR
-            #crop = crop[..., ::-1]
+            crop = image[windows[index].indices()]
             img = Image.fromarray(crop, 'RGB')
             digit = "000000000"
             number = index
