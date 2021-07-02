@@ -18,7 +18,7 @@ this project is also able to run in google colab
 
 
 
-MAKE SAMPLES :
+### MAKE SAMPLES :
 - Just run make_chip_samples.py to your imagery data to make sample that you can annotate
 
 example: python make_chip_samples.py -i xxx\xxx\xx\xxx.jpg -s 1000 -o xx\xx\xx\xx\
@@ -27,7 +27,7 @@ example: python make_chip_samples.py -i xxx\xxx\xx\xxx.jpg -s 1000 -o xx\xx\xx\x
 - Annotate your sample and save in VOC format
 
 
-CONVERT XML TO CSV
+### CONVERT XML TO CSV
 
 - run xml_to_csv.py to make csv annotations samples
 
