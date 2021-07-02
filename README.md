@@ -23,7 +23,7 @@ MAKE SAMPLES :
 
 example: python make_chip_samples.py -i xxx\xxx\xx\xxx.jpg -s 1000 -o xx\xx\xx\xx\
 
-- to make and annotate you samples you need to install Labelimg
+- to make and annotate your samples you need to install Labelimg
 - Annotate your sample and save in VOC format
 
 
