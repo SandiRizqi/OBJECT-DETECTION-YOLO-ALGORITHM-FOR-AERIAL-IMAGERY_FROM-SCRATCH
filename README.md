@@ -1,7 +1,7 @@
 # OBJECT-DETECTION-YOLO-ALGORITHM-FOR-AERIAL-IMAGERY
 This project is implementation of Object detection YOLO algorithm to detect object in aerial imagery or satellite imagery data
 
-To implement this project you need to meke envirinment and install some essential packages:
+To implement this project you need to make environment and install some essential packages:
 - Tensorflow
 - Keras
 - slidingwindow
@@ -14,7 +14,7 @@ or just install from Requirement.txt
 
 by pip install -r Requirement.txt
 
-this project also able to run in google colab
+this project is also able to run in google colab
 
 
 
