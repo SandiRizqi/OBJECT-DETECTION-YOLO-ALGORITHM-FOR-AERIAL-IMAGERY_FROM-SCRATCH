@@ -42,6 +42,6 @@ example: python xml_to_csv.py -i C:\DeepTree\samplemanual_tm_tbm\images -l C:\De
 
 example : python train_yolo.py -a annotations.csv -i Dataset/images -s 250 -m Model -e 10
 
-you can train your model eather in you local machine or in cloud service like google colab
+you can train your model eather in you local machine or cloud service like google colab, aws, or gcp
 
 ![image](https://user-images.githubusercontent.com/26809652/124358923-c4a98000-dc4c-11eb-8909-042ea7a30000.png)
