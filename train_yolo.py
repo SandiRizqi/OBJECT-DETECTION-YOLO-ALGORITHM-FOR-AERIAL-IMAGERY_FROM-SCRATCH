@@ -305,3 +305,4 @@ callbacks = [tf.keras.callbacks.ModelCheckpoint(config.checkpoint + '/object_det
 ]
 
 history = model.fit(train_generator,validation_data=val_generator, epochs=argumens.epochs, callbacks=callbacks)
+model.save(config.saved_model)
