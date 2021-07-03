@@ -1,0 +1,7 @@
+tensorflow-gpu==2.4
+slidingwindow
+geopandas
+rasterio
+pillow
+albumentations
+tqdm
