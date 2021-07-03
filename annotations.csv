@@ -1,4 +1,4 @@
-image_id,width,height,X,Y,W,H,bbox,source
+image_id,width,height,X,Y,W,H,yolo_bbox,source
 000000000.png,1000,1000,827,543,144,151,"[827,543,144,151]",palm
 000000000.png,1000,1000,690,656,103,102,"[690,656,103,102]",palm
 000000000.png,1000,1000,831,713,146,161,"[831,713,146,161]",palm
