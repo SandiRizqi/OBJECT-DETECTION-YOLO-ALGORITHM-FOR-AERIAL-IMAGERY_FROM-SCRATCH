@@ -123,7 +123,8 @@ def on_epoch_end(self):
     if self.shuffle == True:
         np.random.shuffle(self.indexes)
 
-
+DataGenerator.__len__ = __len__
+DataGenerator.on_epoch_end = on_epoch_end
 
 DataGenerator.train_augmentations = albu.Compose([albu.RandomSizedCrop(
     min_max_height=(config.resized_size, config.resized_size),
