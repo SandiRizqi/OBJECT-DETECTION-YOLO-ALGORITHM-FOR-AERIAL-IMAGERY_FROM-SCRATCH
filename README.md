@@ -41,3 +41,7 @@ example: python xml_to_csv.py -i C:\DeepTree\samplemanual_tm_tbm\images -l C:\De
 - run train_yolo.py to train and save your model
 
 example : python train_yolo.py -a annotations.csv -i Dataset/images -s 250 -m Model -e 10
+
+you can train your model eather in you local machine or in cloud service like google colab
+
+![alt text](https://github.com/SandiRizqi/OBJECT-DETECTION-YOLO-ALGORITHM-FOR-AERIAL-IMAGERY_FROM-SCRATCH/tree/main/Model/train_colab.png?raw=true)
