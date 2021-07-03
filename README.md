@@ -44,4 +44,4 @@ example : python train_yolo.py -a annotations.csv -i Dataset/images -s 250 -m Mo
 
 you can train your model eather in you local machine or in cloud service like google colab
 
-![alt text](https://github.com/SandiRizqi/OBJECT-DETECTION-YOLO-ALGORITHM-FOR-AERIAL-IMAGERY_FROM-SCRATCH/tree/main/Model/train_colab.png?raw=true)
+![image](https://user-images.githubusercontent.com/26809652/124358923-c4a98000-dc4c-11eb-8909-042ea7a30000.png)
