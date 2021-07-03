@@ -6,8 +6,8 @@ import argparse
 args = argparse.ArgumentParser(description='Process Training model')
 args.add_argument('-i','--img_dir', type=str, help='images_directory', required=True)
 args.add_argument('-m','--model_dir', type=str, help='model_directory', required=True)
-args.add_argument('-s','--resized_size', type=int,help='chips_size', required=True)
-args.add_argument('-a','--annotations', type=int,help='chips_size', required=True)
+args.add_argument('-s','--resized_size', type=int,help='resized_size', required=True)
+args.add_argument('-a','--annotations', type=str,help='annotations_file', required=True)
 
 argumens = args.parse_args()
 
