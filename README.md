@@ -33,3 +33,11 @@ example: python make_chip_samples.py -i xxx\xxx\xx\xxx.jpg -s 1000 -o xx\xx\xx\x
 
 
 example: python xml_to_csv.py -i C:\DeepTree\samplemanual_tm_tbm\images -l C:\DeepTree\samplemanual_tm_tbm\labels -s 1000 -o C:\DeepTree\samplemanual_tm_tbm
+
+
+
+### TRAIN YOLO MODEL
+
+- run train_yolo.py to train and save your model
+
+example : python train_yolo.py -a annotations.csv -i Dataset/images -s 250 -m Model -e 10
