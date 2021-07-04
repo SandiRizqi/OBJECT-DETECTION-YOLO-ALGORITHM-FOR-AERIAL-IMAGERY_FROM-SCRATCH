@@ -45,3 +45,9 @@ example : python train_yolo.py -a annotations.csv -i Dataset/images -s 250 -m Mo
 you can train your model eather in you local machine or cloud service like google colab, aws, or gcp
 
 ![image](https://user-images.githubusercontent.com/26809652/124358923-c4a98000-dc4c-11eb-8909-042ea7a30000.png)
+
+
+
+
+### DETECT OBJECT IN AERIAL IMAGERY
+![image](https://user-images.githubusercontent.com/26809652/124380578-9d53c100-dce7-11eb-93a9-d5a269edbbd6.png)
