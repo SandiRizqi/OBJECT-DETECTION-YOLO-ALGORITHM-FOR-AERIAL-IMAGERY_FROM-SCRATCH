@@ -1,4 +1,5 @@
 import tensorflow as tf
+from losses import *
 
 def build_model(height, width):
     x_input = tf.keras.Input(shape=(height, width, 3))
@@ -129,5 +130,15 @@ def build_model(height, width):
 
     model = tf.keras.Model(inputs=x_input, outputs=predictions)
 
+
+    return model
+
+def compile_model(model):
+    # Compile and Training Model
+    optimiser = tf.keras.optimizers.Adam(learning_rate=0.0001)
+    model.compile(
+        optimizer=optimiser,
+        loss=custom_loss
+    )
 
     return model
